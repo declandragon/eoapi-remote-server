@@ -4,29 +4,6 @@ storage api data in remote server
 
 node : version>16
 
-## 运行代码
-
-```
-yarn
-yarn start:dev
-```
-
-如果想提高开发效率，可以安装 nestjs 官方提供的命令行 nestjs-cli 快速生成组件、服务等模板。
-
-```
-npm i -g @nestjs/cli
-```
-
-## 使用docker一键启动
-启动成功后，通过 http://localhost:3000 访问。
-```bash
-docker-compose up -d
-```
-查看实时日志输出
-```bash
-docker-compose logs -f
-```
-
 ## 配置
 
 `src/config/config.development.ts` 中需要配置 MySQL 数据库的连接信息。
@@ -54,6 +31,29 @@ docker-compose logs -f
 
 ```
 API_KEY=1ab2c3d4e5f61ab2c3d4e5f6
+```
+
+## 使用docker一键启动
+启动成功后，通过 http://localhost:3000 访问。
+```bash
+docker-compose up -d
+```
+查看实时日志输出
+```bash
+docker-compose logs -f
+```
+
+## 运行代码
+
+```
+yarn
+yarn start:dev
+```
+
+如果想提高开发效率，可以安装 nestjs 官方提供的命令行 nestjs-cli 快速生成组件、服务等模板。
+
+```
+npm i -g @nestjs/cli
 ```
 
 ## 命令
